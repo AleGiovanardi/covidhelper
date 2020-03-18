@@ -20,7 +20,7 @@ model = load_model(args["model"])
 # grab all image paths in the input directory and randomly sample them
 imagePaths = list(paths.list_images(args["images"]))
 random.shuffle(imagePaths)
-imagePaths = imagePaths[:26]
+imagePaths = imagePaths[:150]
 # initialize our list of results
 results = []
 # loop over our sampled image paths
@@ -48,13 +48,13 @@ for p in imagePaths:
 	color = (0, 0, 255) if pred == 0 else (0, 255, 0)
 	# resize our original input (so we can better visualize it) and
 	# then draw the label on the image
-	orig = cv2.resize(orig, (224, 224))
+	orig = cv2.resize(orig, (128, 128))
 	cv2.putText(orig, label, (3, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
 		color, 2)
 	# add the output image to our list of results
 	results.append(orig)
 # create a montage using 128x128 "tiles" with 4 rows and 4 columns
-montage = build_montages(results, (224, 224), (8, 8))[0]
+montage = build_montages(results, (128, 128), (15, 15))[0]
 # show the output montage
 cv2.imshow("Results", montage)
 cv2.waitKey(0)
