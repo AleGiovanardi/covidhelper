@@ -11,3 +11,4 @@ We can train a model, serialize and save to disk. We can then use load_module.py
 3) Search and add Normal RX and CT scans to dataset for training
 4) Search and add Covid and Normal RX and CT scans for testing (must NOT be the same images included in training)
 5) Refine the model and test reliability on field study cases.
+6) Add Grad-CAM debugging module to test if model is actully looking for what we are looking for!
