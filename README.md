@@ -53,7 +53,7 @@ Please read [CONTRIBUTING.md]() for details on our code of conduct, and the proc
 
 * **Alessandro Giovanardi** - *This repo* - [](https://github.com/AleGiovanardi)
 
-* **Joseph Paul Cohen** - *Initial DataSet Curator* - [PyImageSearch](https://github.com/ieee8023)
+* **Joseph Paul Cohen** - *Initial DataSet Curator* - [ieee8023](https://github.com/ieee8023)
 
 See also the list of [contributors](https://github.com/AleGiovanardi/covidhelper/graphs/contributors) who participated in this project.
 
