@@ -15,12 +15,13 @@ import argparse
 import imutils
 import cv2
 
+
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
 	help="path to the input image")
 ap.add_argument("-m", "--model", type=str, default="vgg",
-	choices=("vgg", "resnet"),
+	choices=("vgg", "resnet", "covid19"),
 	help="model to be used")
 args = vars(ap.parse_args())
 
@@ -30,6 +31,10 @@ Model = VGG16
 # check to see if we are using ResNet
 if args["model"] == "resnet":
 	Model = ResNet50
+
+# check to see if we are using ResNet
+elif args["model"] == "covid19":
+	Model = open('/home/ag/keras-covid-19/covid19ct2.model')
 
 # load the pre-trained CNN from disk
 print("[INFO] loading model...")

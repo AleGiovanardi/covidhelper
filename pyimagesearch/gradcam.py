@@ -87,7 +87,7 @@ class GradCAM:
 		return heatmap
 
 	def overlay_heatmap(self, heatmap, image, alpha=0.5,
-		colormap=cv2.COLORMAP_VIRIDIS):
+		colormap=cv2.COLORMAP_PLASMA):
 		# apply the supplied color map to the heatmap and then
 		# overlay the heatmap on the input image
 		heatmap = cv2.applyColorMap(heatmap, colormap)
