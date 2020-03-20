@@ -1,0 +1,17 @@
+This file contains useful resources for project development
+
+#Medical Literature about COVID
+
+https://www.auntminnie.com/index.aspx?sec=sup&sub=cto&pag=dis&ItemID=128300
+
+https://www.bmj.com/coronavirus
+
+https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov
+
+#Data sources
+
+https://www.sirm.org/category/senza-categoria/covid-19/
+
+https://radiopaedia.org/articles/normal-chest-imaging-examples
+
+
