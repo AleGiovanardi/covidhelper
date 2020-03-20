@@ -10,17 +10,19 @@ from tensorflow.keras.applications import VGG16
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.applications import imagenet_utils
+from tensorflow.keras.models import load_model
 import numpy as np
 import argparse
 import imutils
 import cv2
+
 
 # construct the argument parser and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--image", required=True,
 	help="path to the input image")
 ap.add_argument("-m", "--model", type=str, default="vgg",
-	choices=("vgg", "resnet"),
+	choices=("vgg", "resnet", "covid19"),
 	help="model to be used")
 args = vars(ap.parse_args())
 
@@ -31,9 +33,19 @@ Model = VGG16
 if args["model"] == "resnet":
 	Model = ResNet50
 
+# check to see if we are using ResNet
+#elif args["model"] == "covid19":
+#	Model = ('/home/ag/keras-covid-19/covid19ct2.model')
+
+new_model = load_model('covid19ct2.model')
+
+# Check its architecture
+new_model.summary()
+
 # load the pre-trained CNN from disk
 print("[INFO] loading model...")
-model = Model(weights="imagenet")
+#model = Model(weights="imagenet")
+model = load_model("covid19ct2.model", custom_objects=None, compile=True)
 
 # load the original image from disk (in OpenCV format) and then
 # resize the image to its target dimensions
