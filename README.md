@@ -13,6 +13,8 @@ We can train a model, serialize and save to disk. We can then use load_module.py
 5) Refine the model and test reliability on field study cases.
 6) Add Grad-CAM debugging module to test if model is actully looking for what we are looking for!
 
+TO CONTRIBUTE SEND AN EMAIL TO COVIDHELPER@GMAIL.COM or MAKE A PULL REQUEST
+
 
 ## Getting Started
 
