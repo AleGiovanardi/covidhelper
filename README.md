@@ -19,7 +19,7 @@ We can train a model, serialize and save to disk. We can then use load_module.py
 Build a dataset with build_covid_dataset.py
 Train your model with train_covid19.py
 Test your model against candidates with load_model.py
-Debug your model with Grad-CAM debug using apply_gradcam.py
+Debug your model with Grad-CAM debug using apply_gradcam_custom.py (still WIP)
 
 ### Prerequisites
 
