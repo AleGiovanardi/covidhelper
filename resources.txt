@@ -16,3 +16,6 @@ https://radiopaedia.org/articles/normal-chest-imaging-examples
 
 http://www.chestx-ray.com/index.php/education/normal-cxr-module-train-your-eye
 
+#AI and ML literature
+
+http://www.chestx-ray.com/index.php/education/normal-cxr-module-train-your-eye
